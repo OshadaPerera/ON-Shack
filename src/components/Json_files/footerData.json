@@ -1,0 +1,70 @@
+[
+  { "id":1,
+    "title": "Quick Links",
+    "cName": "sb__footer-links-div",
+    "links": [
+      { "id":1,
+        "name": "Home",
+        "url": "#"
+      },
+      { "id":2,
+        "name": "Buy",
+        "url": "#"
+      },
+      { "id":3,
+        "name": "Rent",
+        "url": "#"
+      }
+    ]
+  },
+  { "id":2,
+    "title": "Company",
+    "cName": "sb__footer-links-div",
+    "links": [
+      { "id":1,
+        "name": "About Us",
+        "url": "#"
+      },
+      { "id":2,
+        "name": "Contact Us",
+        "url": "#"
+      }
+    ]
+  },
+  { "id":3,
+    "title": "Partners",
+    "cName": "sb__footer-links-div",
+    "links": [
+      { "id":1,
+        "name": "React",
+        "url": "https://react.dev/"
+      },
+      { "id":2,
+        "name": "JavaScript",
+        "url": "https://www.w3schools.com/js/DEFAULT.asp"
+      },
+      { "id":3,
+        "name": "HTML",
+        "url": "https://www.w3schools.com/html/"
+      },
+      { "id":4,
+        "name": "CSS",
+        "url": "https://www.w3schools.com/Css/"
+      }
+    ]
+  },
+  { "id":4,
+    "title": "Legal",
+    "cName": "sb__footer-links-div",
+    "links": [
+      { "id":1,
+        "name": "Terms and Conditions",
+        "url": "#"
+      },
+      { "id":2,
+        "name": "Privacy Policy",
+        "url": "#"
+      }
+    ]
+  }
+]

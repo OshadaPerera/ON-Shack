@@ -1,0 +1,112 @@
+.section__padding{
+    padding: 1rem 4rem;
+    margin-top: 20px;
+}
+.footer{
+background-color: #2d2d32;
+border-radius: 20px 20px 0px 0px ;
+font-family: 'Poppins', sans-serif;
+position: relative;
+bottom: 0;
+width: 100%;
+
+}
+.sb__footer{
+    display: flex ;
+    flex-direction: column;
+}
+.sb__footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+
+}
+.sb__footer-links-div{
+    width: 150px;
+    margin:1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: steelblue;
+}
+a:visited{
+    color: rgb(55, 204, 105);
+}
+
+.socialmedia{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.sb__footer-links-div h3{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0.9rem;
+}
+.sb__footer-links-div li{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+.sb__footer-below{
+    margin-top: 0.4rem;
+    
+}
+hr{
+    color: white !important;
+    width: 100%;
+}
+.sb__footer-below p{
+    font-size: 13px;
+    line-height: 15px;
+    margin: 0.9 rem 0;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+  }
+
+@media  screen and (max-width: 550px) {
+    .sb__footer-links{
+        margin: 1rem 0;
+    }
+    .sb__footer-below{
+        flex-direction: column;
+        justify-content: left;
+    }
+    .sb__footer-below p{
+        flex-direction: column;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .sb__footer-links{
+        margin: 1rem 0;
+    }
+    .sb__footer-below{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sb__footer-below p{
+        flex-direction: row;
+    }
+    .footer{
+        bottom: -30%;
+    }
+    
+}
+

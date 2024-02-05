@@ -1,0 +1,215 @@
+.home {
+    width: 100%;
+    font-family: roboto;
+  }
+  
+  /* Styles for the home div */
+  .homeDiv {
+    background-image: url(https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 190px;
+    margin-bottom: 110px;
+  }
+  
+  /* Styles for the containers */
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 630px;
+    width: 450px;
+    margin-left: 60px;
+    align-items: center;
+  }
+  
+  .singleContainer {
+    margin: 8px;
+    border-radius: 35px;
+    margin-top: 50px;
+    box-shadow: 5px 8px 10px 5px rgba(188, 191, 192, 0.426);
+  }
+  
+  .singleContainer:hover {
+    box-shadow: 5px 8px 10px 5px rgba(188, 191, 192, 0.726);
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .singleContainer:hover .hidContainer {
+    display: block;
+    transition: ease-in;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* Styles for the image in the image container */
+  .imgContainer img {
+    height: 300px;
+    width: 400px;
+    z-index: -1;
+    border-radius: 32px 1px;
+  }
+  
+  /* Styles for the text in the image container */
+  .hidContainer {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    margin: 9px;
+    padding: 3px 5px 3px 5px;
+    background-color: rgba(25, 0, 255, 0.907);
+    border-radius: 13px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Styles for the below part in the container */
+  .belowCont {
+    padding: 5px;
+    margin-left: 8px;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .headingContainer {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 10px 0px 10px 0px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .textContainer {
+    font-size: 15px;
+  }
+  
+  .linkContainer {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(0, 42, 255);
+  }
+  
+  .linkContainer i {
+    color: rgb(0, 42, 255);
+    font-size: 15px;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      height: 100%;
+      width: 90%;
+      margin-left: 15px;
+      margin-top: 0px;
+      align-items: center;
+    }
+    .imgContainer img {
+      height: 50%;
+      width: 100%;
+      z-index: -1;
+      border-radius: 32px 1px;
+    }
+    .homeDiv{
+      height: 60%;
+      margin-bottom: 4px;
+
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .container {
+      flex-direction: column;
+      height: 100%;
+      width: 90%;
+      margin-left: 35px;
+      margin-top: 0px;
+      align-items: center;
+    }
+    .imgContainer img {
+      height: 50%;
+      width: 100%;
+      z-index: -1;
+      border-radius: 32px 1px;
+    }
+    .homeDiv{
+      height: 60%;
+      margin-bottom: 4px;
+
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: 20%;
+      width: 65%;
+      margin-left: 110px;
+      margin-top: 0px;
+      align-items: center;
+    }
+    .imgContainer img {
+      height: 50%;
+      width: 100%;
+      z-index: -1;
+      border-radius: 32px 1px;
+    }
+    .home {
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .container {
+      flex-direction: row;
+      height: 30%;
+      width: 90%;
+      margin-left: 50px;
+    }
+    .singleContainer {
+      width: 35%;
+    }
+    .imgContainer img {
+      height: 60%;
+      width: 100%;
+      border-radius: 32px 1px;
+    }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .homeDiv{
+      height: 250px;
+      margin-bottom: 55px;
+    }
+  }
+  
+  /* Custom media query for minimum height (adjust as needed) */
+  @media only screen and (min-height: 1366px) {
+    .container {
+      flex-direction: column;
+      height: 40%;
+      width: 100%;
+      margin-left: 0px;
+      margin-top: 0px;
+      align-items: center;
+    }
+    .imgContainer img {
+      height: 60%;
+      width: 100%;
+      z-index: -1;
+      border-radius: 32px 1px;
+    }
+    .home {
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+  }
+  

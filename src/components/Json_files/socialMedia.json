@@ -1,0 +1,29 @@
+[
+    {
+        "id":1,
+        "link":"https://www.facebook.com/",
+        "icon":"fa-brands fa-facebook"
+
+    }
+    ,
+    {
+        "id":2,
+        "link":"https://www.instagram.com/",
+        "icon":"fa-brands fa-instagram"
+
+    }
+    ,
+    {
+        "id":3,
+        "link":"https://www.twitter.com/",
+        "icon":"fa-brands fa-twitter"
+
+    }
+    ,
+    {
+        "id":5,
+        "link":"https://www.linkedin.com/",
+        "icon":"fa-brands fa-linkedin"
+
+    }
+]

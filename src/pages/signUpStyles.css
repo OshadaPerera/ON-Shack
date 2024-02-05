@@ -1,0 +1,89 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin-top: 70px;
+  }
+  .signUp-div{
+    background-color: #f4f4f4;
+  }
+  
+  .signup-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .success-message {
+    position: absolute;
+    z-index: 999;
+  }
+  .goBack{
+    margin:auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #4a4a4a;
+    cursor: pointer;
+    width: 80px;
+    color: #f4f4f4;
+    height: 36px;
+  }
+  .goBack:hover{
+    background-color: #000000;
+  }
+
+  /* Mobile devices */
+  @media only screen and (max-width: 600px) {
+    
+    .signup-form {
+      width: 100%;
+      padding: 15px;
+
+    }
+
+    .signup-container{
+      margin-top: -50px;
+    }
+    .goBack{
+      margin-top: -170px;
+    }
+  }
+
+
+/* Tablets and larger devices */
+@media only screen and (min-width: 768px) {
+  .signup-form {
+    width: 70%;
+  }
+  .signup-container{
+    margin-top: 0px;
+  
+  }
+}
+
+/* Small desktops and larger devices */
+@media only screen and (min-width: 992px) {
+  .signup-form {
+    width: 60%;
+  }
+}
+
+/* Medium desktops and larger devices */
+@media only screen and (min-width: 1200px) {
+  .signup-container {
+    margin-top: 50px;
+  }
+
+  .signup-form {
+    width: 50%;
+  }
+}

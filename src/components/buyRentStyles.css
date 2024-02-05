@@ -1,0 +1,196 @@
+.fullPage{
+    margin: 110px 10px 10px 10px;
+}
+.paginationPage{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0px 0px 0px;
+}
+.fa-regular{
+    margin-right: 1px;
+    font-size: 18px;
+    color: white;
+}
+.bhidContainer{
+    background-color: rgb(37, 188, 37);
+    font-size: 12px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    margin: 9px;
+    padding: 3px 5px 3px 5px;
+    border-radius: 13px;
+    font-weight: bold;
+    color: white;
+}
+.bsingleContainer:hover .bhidContainer {
+    display: block;
+    transition: ease-in;
+    transition: all 0.5s ease-in-out;
+  }
+  .bsingleContainer:hover{
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+.bbelowHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.beds, .baths{
+    margin: 5px;
+    font-size: 16px;
+}
+.bheadingContainer{
+    font-size: 14px;
+    margin-left: 199px; ;
+    border: 2px solid rgb(37, 163, 188);
+    padding: 2px 5px 2px 5px;
+    border-radius: 8px;
+    color: rgb(37, 163, 188);
+    font-family: 'Roboto', sans-serif;
+}
+hr{
+    color: #000;
+    background-color: #00000098;
+    height: 2px;
+    margin: 10px 15px 10px 0px;
+}
+.bPriceContainer{
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(211, 9, 90);
+    margin-bottom: 10px;
+}
+.bDescriptionContainer{
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: blue;
+}
+.bcontainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 30px;
+}
+.bsingleContainer{
+    margin: 20px;
+    width: 370px;
+    box-shadow: #00000098 0px 0px 10px;
+    border-radius: 10px;
+}
+.displayImg{
+    width: 370px;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+}
+.bbelowCont{
+    padding: 5px 10px 5px 10px;
+}
+
+@media screen and (max-width:550px){
+    .fullPage{
+        margin: 40px 5px 10px 5px;
+    }
+    .bcontainer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .bsingleContainer{
+        margin: 2px;
+        width: 90%;
+        margin: 15px 0px 15px 0px;
+    }
+    .displayImg{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .bheadingContainer{
+        margin-left: 140px;
+    }
+    .bDescriptionContainer{
+        font-size: 15px;
+    }
+    
+}
+@media only screen and (min-width: 600px) {
+    .fullPage{
+        margin: 110px 10px 10px 10px;
+    }
+    .bcontainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 10px;
+    }
+    .bsingleContainer{
+        margin: 10px;
+        width: 90%;
+    }
+    .displayImg{
+        width: 100%;
+        height: 230px;
+    }
+    .bheadingContainer{
+        margin-left: 140px;
+    }
+    .bDescriptionContainer{
+        font-size: 15px;
+    }
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .fullPage{
+        margin: 40px 5px 10px 0px;
+    }
+    .bcontainer{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 10px;
+    }
+    .bsingleContainer{
+        margin: 10px;
+        width: 90%;
+    }
+    .displayImg{
+        width: 100%;
+        height: 230px;
+    }
+    .bheadingContainer{
+        margin-left: 185px;
+    }
+    .bDescriptionContainer{
+        font-size: 15px;
+    }
+}
+/* Large devices (laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .fullPage{
+        margin: 110px 5px 10px 0px;
+    }
+    .bcontainer{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-left: 30px;
+    }
+    .bsingleContainer{
+        margin: 15px;
+        width: 370px;
+    }
+    .displayImg{
+        width: 370px;
+        height: 250px;
+    }
+    .bheadingContainer{
+        margin-left: 199px;
+    }
+    .bDescriptionContainer{
+        font-size: 17px;
+    }
+}

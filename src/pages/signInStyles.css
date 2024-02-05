@@ -1,0 +1,112 @@
+body{
+  font-family: "poppins", sans-serif;
+}
+.sign-in-container {
+    max-width: 400px;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input,
+  .rw-widget-container {
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  .password{
+    margin-bottom: 2px;
+  }
+  
+  .sign-in-but {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4a4a4a;
+    font-size: 16px;
+  }
+  
+  .sign-in-but:hover {
+    background-color: #0055ff;
+  }
+  .noAccount{
+    margin: 8px auto;
+    text-align: center;
+  }
+  .forgotDiv{
+    width: 38%;
+    margin-left: auto;
+  }
+  .forgotPw{
+    text-align: right;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #a5a5a575;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+  }
+  .google img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 1px;
+    margin-right: 10px;
+  }
+  .facebook i{
+    margin-right: 10px;
+
+  }
+  .google button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+  }
+  
+  .facebook button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    margin: 7px 0px 10px 0px;
+    background-color: blue;
+
+  }
+  

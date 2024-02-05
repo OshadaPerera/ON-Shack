@@ -1,0 +1,32 @@
+[
+    {   
+        "id" : 1,
+        "hTitle": "House Prices",
+        "img":"https://www.ministryofvillas.com/wp-content/uploads/2017/07/sri-lanka-jhvilla-06.jpg",
+        "heading":"Sold House Prices",
+        "description":"Find out how much your property is worth with our free, instant online property valuation tool.",
+        "link":"Search house prices"
+
+    },
+
+    {
+        "id" : 2,
+        "hTitle": "Rent House",
+        "img":"https://hapondo.qa/blog/wp-content/uploads/2023/10/Best-Modern-House-Design_-A-New-Era-of-Architecture.webp",
+        "heading":"Top Houses for rent",
+        "description":"Find out the houses with the best prices, and their included amenities.",
+        "link":"Search top houses for rent"
+
+    },
+    {
+        "id" : 3,
+        "hTitle": "Locations",
+        "img":"https://www.archaeology.lk/wp-content/uploads/2017/03/Sri_Lanka.jpg",
+        "heading":"Top Locations",
+        "description":"Find out the best locations and the best neighbourhoods where you can live happily with your family.",
+        "link":"Search house locations"
+
+    }
+
+
+]

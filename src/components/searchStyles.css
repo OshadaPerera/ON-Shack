@@ -1,0 +1,430 @@
+.searchBar{
+  padding-top: 150px;
+}
+/* Styling for the search container */
+.search {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 44, 154, 0.764);
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.893); /* Add a box shadow for a subtle lift effect */
+    border-radius: 20px; /* Rounded corners for a modern look */
+    font-family: 'Poppins', sans-serif;
+    position:static;
+    margin: auto;
+  }
+.search:hover{
+    box-shadow: 10px 10px 25px rgba(56, 132, 190, 0.893); /* Add a box shadow for a subtle lift effect */
+    transition: all 0.6s ease-out;
+  }
+  .searchHead{
+  text-align: center;
+  padding: 10px;
+  margin: 1px;
+  text-shadow: 2px 2px 4px #000000;
+
+  }
+  .searchHead h3{
+  font-size: 20px !important;
+  font-weight: 600;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 0.4px  rgba(23, 223, 219, 0.892);
+  }
+  .searchp{
+  font-size: 20px !important;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  }
+  .searchFoot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  /* Styling for the search input container */
+  .searchInputs {
+    justify-content: center;
+    align-items: center;
+  display: flex;
+  background-color: rgb(183, 201, 201);
+  border: 0;
+  border-radius: 15px; /* Rounded corners for the input container */
+  font-size: 14px;
+  padding-right: 1px;
+  height: 50px;
+  width: 80%;
+  }
+
+  /* Styling for the search input */
+  .searchInputs input {
+  border: 0;
+  background-color: rgb(183, 201, 201);
+  font-size: 15px;
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 120px;
+  }
+  .searchInputs input::placeholder {
+   font-size: 13px;
+   align-items: start;
+   justify-content: start;
+  }
+
+  /* Styling for the search icon container */
+  .searchIcon {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(93, 91, 91, 0.527);
+  border-radius: 40px; /* Rounded corners for the icon container */
+  display: grid;
+  place-items: center;
+  cursor: pointer; /* Change cursor to a pointer on hover to indicate interactivity */
+  margin-left: 40px; /* Provide space between the input and the icon */
+  }
+
+  /* Styling for the input focus state */
+  input:focus {
+  outline: none; /* Remove the default focus outline */
+  }
+
+  /* Styling for the search icon */
+  .searchIcon i {
+  height: 25px;
+  color: white;
+  font-size: 24px;
+  }
+  .dataResult{
+  position: absolute;
+  margin-top: 550px;
+  width: 700px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 10px;
+  z-index: 100;
+  }
+  .dataResult ::-webkit-scrollbar {
+  display: none;
+  }
+  .dataResult .dataItem{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  color: black;
+  padding: 3px;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+  align-items: center;
+
+  }
+  .dataResult li:hover{
+  transform: scale(1.02);
+  transition: all 0.6s ease-out;
+  }
+  .dataResult li h3{
+  font-size: 13px;
+  font-weight: 400;
+  padding-left: 3px;
+  padding-right: 3px;
+  width: max-content;
+  border-radius: 6px;
+  color: white;
+  }
+  .singleItem{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5px;
+    list-style-type: none;
+    border: #000000 1px solid;
+    padding: 10px;
+    border-radius: 4px;
+    width: 95%;
+    background-color: rgba(93, 93, 93, 0.101);
+    cursor: pointer;
+  }
+  .type{
+  background-color: rgb(40, 81, 204);
+  }
+  .type1{
+  background-color: rgb(105, 160, 21);
+  }
+  .itemImg img{
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    margin-top: 20px;
+    border-radius: 7px;
+    width: 200px;
+  }
+  /* These are the style for the bedroom and bathroom icons */
+  .fa-solid{
+  color: rgb(93, 93, 93);
+  font-size: 12px;
+  }
+  .itemDate{
+  font-size: 13px;
+  color: rgb(73, 73, 73);
+  }
+  /* styles for the bedroom and bathroom text */
+  .itemBedRooms{
+  font-size: 13px;
+  color: black;
+  }
+  .itemLocation, .itemType{
+  font-size: 14px;
+  color:rgb(20, 2, 26);
+  margin: 5px;
+  }
+  .itemPrice{
+  font-size: 18px;
+  color:chocolate;
+  }
+  .buttons-container{
+  display: flex;
+  flex-direction: row;
+  padding: 2px;
+  justify-content:space-evenly;
+  align-items: center;
+  margin-top: 9px;
+  }
+  .buyRentButtons{
+    margin-left: 5px;
+  }
+  .searchRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  }
+
+  .buttons-container ::placeholder {
+    font-size: 12px;
+  }
+  .filter-Type{
+    font-size: 12px !important;
+    margin-top: 5px;
+  }
+  .filter-Bedrooms{
+    margin-top: 5px;
+  }
+  .buttons-container p{
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-bottom: 2px;
+  }
+
+  .priceFrom,.priceTo,.dateFrom,.dateUntil, .filter-Price, .filter-Date{
+    display: flex;
+    flex-direction: row;  
+  }
+  .numBed{
+  width: 100px;
+
+  }
+  .numPrice{
+  width: 140px;
+
+  }
+  .datePick{
+  width: 125px;
+
+  }
+  .typePick,
+  .datePick,
+  .numPrice,
+  .numBed {
+    margin: 2px 8px 0px 0px;
+  }
+  .rw-input {
+    height: 20px;
+    font-size: 12px !important;
+  }
+  .rw-calendar{
+    font-size: 12px !important;
+  }
+  .rw-widget-input {
+    height: 20px;
+    font-size: 12px !important;
+    justify-content: center;
+    text-align: center;
+  }
+  .rw-input-addon, .rw-input-addon.rw-picker-btn {
+    height: 20px;
+  }
+  .rw-number-picker-spinners .rw-btn {
+    height: 12px;
+  }
+
+  .noResultFound {
+    margin-top: 90px;
+    padding: 10px 70px 10px 70px;
+    background-color: #ffffff; /* Background color for an error-like appearance */
+    color: #721c24; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+    position: absolute;
+    z-index: 2;
+    opacity: 0.9;
+  }
+  
+
+  @media  screen and (max-width: 550px) {
+  .search{
+    width: 97%;
+    height: 80%;
+  }
+  .searchInputs{
+    width: 96%;
+  }
+  .searchRow{width: 95%;}
+  .searchp{
+    font-size: 16px !important;
+  }
+  .searchInputs input{
+    width:70%;
+  }
+  .searchHead h3{
+    font-size: 15px !important;
+  }
+  .dataResult{
+  width: 93%;
+  }
+  .buttons-container{
+    flex-direction: column;
+  }
+  .typeLabel{
+    flex-direction: row;
+  }
+  .fullPrice, .fullBed, .fullDates{
+    margin:5px;
+    z-index: 1;
+  }
+  .buyRentButtons{
+    display: flex;
+    flex-direction: row;
+  }
+  .buyRent{
+    font-size: 16px !important;
+    padding: 4px !important;
+    margin: 5px !important;
+  }
+  .singleItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .itemImg img{
+    margin-top: 0px;
+  }
+
+
+  }
+  @media only screen and (min-width: 600px) {
+    .search{
+      width: 95%;
+      height: 96%;
+    }
+    .searchInputs{
+      width: 60%;
+    }
+    .searchp{
+      font-size: 16px;
+    }
+    .searchInputs input{
+      width:70%;
+    }
+    .searchHead h3{
+      font-size: 15px;
+    }
+    .dataResult{
+    width: 93%;
+    }
+    .buttons-container{
+      flex-direction: column;
+      padding: 5px;
+    }
+    .typeLabel{
+      flex-direction: row;
+      margin:3px;
+    }
+    .fullPrice, .fullBed, .fullDates{
+      margin:05px;
+      z-index: 1;
+    }
+  }
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+      .search{
+        width: 95%;
+        height: 96%;
+      }
+      .searchInputs{
+        width: 60%;
+      }
+      .searchp{
+        font-size: 16px;
+      }
+      .searchInputs input{
+        width:70%;
+      }
+      .searchHead h3{
+        font-size: 15px;
+      }
+      .dataResult{
+      width: 93%;
+      }
+      .buttons-container{
+        flex-direction: column;
+        padding: 5px;
+      }
+      .typeLabel{
+        flex-direction: row;
+        margin:3px;
+      }
+      .fullPrice, .fullBed, .fullDates{
+        margin:5px;
+        z-index: 1;
+      }
+    }
+      /* Extra large devices (large desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .buttons-container{
+      flex-direction: row;
+      margin-bottom: 5px;
+      margin-top: 0px;
+    }
+    .searchInputs{
+      width: 30%;
+    }
+    .search{
+      position:static;
+      margin: auto;
+      bottom:10%; /* Center the container horizontally and provide space from the top */
+      height: 185px;
+      width: 80%;
+    }
+    .rw-input {
+      height: 20px;
+      font-size: 12px !important;
+    }
+    .rw-calendar{
+      font-size: 12px !important;
+    }
+    .rw-widget-input {
+      height: 20px;
+      font-size: 12px !important;
+    }
+    .dataResult{
+      width: 40%;
+    }
+ 
+  }

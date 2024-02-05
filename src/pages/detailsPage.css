@@ -1,0 +1,198 @@
+/* General Styles */
+
+.singleItem-div {
+  margin-top: 120px; /* Adjusted margin for better positioning */
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 3px 3px; /* Reduced shadow intensity */
+  width: 80%;
+  padding: 20px;
+  background-color: rgb(219, 219, 219);
+  font-family: lato;
+}
+
+/* Image Slider Styles */
+
+.image-slider {
+  position: relative;
+  max-width: 800px; /* Set maximum width for the slider */
+  margin: 0 auto; /* Center the slider */
+  margin-bottom: 20px;
+  max-height: 500px;
+}
+
+.image-slider img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #ddd; /* Increased border width */
+  border-radius: 12px; /* Increased border radius for a softer look */
+  cursor: pointer;
+  transition: border 0.3s ease;
+  max-height: 500px;
+  max-width: 800px; 
+}
+
+.image-slider img.selected {
+  border: 2px solid #3498db;
+}
+
+.image-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.next-img{
+  right: 0;
+}
+
+.image-slider button:hover {
+  background-color: #2980b9;
+}
+
+/* Error 404 Styles */
+
+.error404 {
+  text-align: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 50px auto;
+  max-width: 400px;
+}
+
+.error404 h2 {
+  color: #d9534f; /* Bootstrap's danger color */
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.error404 p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Info and Description Styles */
+
+.infoTitle.infoDiv {
+  margin-bottom: 10px;
+}
+
+.infoLabels {
+  font-size: 16px;
+}
+
+.infoTitle {
+  margin: 10px 0 15px 15px;
+  text-align: left;
+  font-size: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.infoDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(65, 105, 225, 0.348);
+  margin: 5px 5px 5px 15px;
+  padding: 5px 5px 5px 15px;
+  border-radius: 5px;
+}
+
+.infoDesc {
+  font-size: 17px;
+  font-family: poppins;
+  font-weight: bold;
+}
+
+.singleItem__container__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.infoPrice .infoDesc {
+  color: rgb(255, 94, 0);
+  font-weight: 600;
+  font-style: oblique;
+}
+
+.propertyDescription {
+  margin: 30px 0 15px 15px;
+  text-align: left;
+}
+
+.description {
+  text-align: justify;
+  font-size: 15px;
+  font-family: Roboto;
+}
+
+.descLabel {
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: 600;
+}
+
+/* Back Link Styles */
+
+.back-link {
+  margin-top: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5a5a5a;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 80px;
+}
+
+.back-link:hover {
+  background-color: #000000;
+}
+
+/* Media Queries */
+
+/* For screens smaller than 600px (e.g., smartphones) */
+@media (max-width: 600px) {
+  .singleItem-div {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .infoDiv {
+    grid-template-columns: 1fr;
+  }
+
+  .infoTitle {
+    margin: 10px 0 15px 0;
+  }
+
+  .back-link {
+    width: 25%;
+  }
+}
+
+/* For screens between 601px and 1024px (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .singleItem-div {
+    width: 80%;
+  }
+}
