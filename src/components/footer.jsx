@@ -66,7 +66,7 @@ const Footer = () => {
             &copy; 2023 ON Shack. All rights reserved. Solution By |{" "}
             <a href="https://www.linkedin.com/in/oshada-perera-3536a1248/">
               {" "}
-              OShada Perera
+              Oshada Perera
             </a>
           </p>
         </div>
