@@ -62,7 +62,13 @@ const Footer = () => {
         {/* Container for the copyright information */}
         <div className="sb__footer-below">
           {/* Copyright notice */}
-          <p>&copy; 2023 ON Shack. All rights reserved.</p>
+          <p>
+            &copy; 2023 ON Shack. All rights reserved. Solution By |{" "}
+            <a href="https://www.linkedin.com/in/oshada-perera-3536a1248/">
+              {" "}
+              OShada Perera
+            </a>
+          </p>
         </div>
       </div>
     </div>
