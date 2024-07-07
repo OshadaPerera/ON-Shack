@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./buyRentStyles.css";
 import property from "./Json_files/propertyData.json";
-import Pagination from "./pagination.jsx";
+import Pagination from "./Pagination.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 
@@ -58,7 +58,8 @@ function BuyRentContainer({ page, callback }) {
             <div
               key={data.id}
               className="bsingleContainer"
-              onClick={() => handleItemClick(data.id)}>
+              onClick={() => handleItemClick(data.id)}
+            >
               <div className="bimgContainer">
                 {data.hTitle ? (
                   <div className="bhidContainer">
@@ -68,7 +69,8 @@ function BuyRentContainer({ page, callback }) {
                 ) : (
                   <div
                     className="bhidContainer"
-                    style={{ display: "none" }}></div>
+                    style={{ display: "none" }}
+                  ></div>
                 )}
                 <img src={data.images[0]} alt="IMG" className="displayImg" />
               </div>
