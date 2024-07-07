@@ -1,7 +1,7 @@
 import "./homeStyles.css";
 import Navbar from "../components/Navbar.jsx";
 import SearchBar from "../components/searchBar.jsx";
-import Footer from "../components/Footer.jsx";
+import Footer from "../components/footer.jsx";
 import homeContainer from "../components/Json_files/homeContainerData.json";
 import { useEffect } from "react";
 

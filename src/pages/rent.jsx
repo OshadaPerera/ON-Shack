@@ -1,7 +1,7 @@
 import "./rentStyles.css";
 import Navbar from "../components/Navbar.jsx";
 import SearchBar from "../components/searchBar.jsx";
-import Footer from "../components/Footer.jsx";
+import Footer from "../components/footer.jsx";
 import BuyRentContainer from "../components/buyRentContainer.jsx";
 import { useEffect } from "react";
 

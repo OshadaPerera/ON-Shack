@@ -3,7 +3,7 @@ import "react-widgets/styles.css";
 import DropdownList from "react-widgets/DropdownList";
 import "./signInStyles.css";
 import Navbar from "../components/Navbar.jsx";
-import Footer from "../components/Footer.jsx";
+import Footer from "../components/footer.jsx";
 import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
